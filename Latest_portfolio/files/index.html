@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kapil Raghav | Backend & GenAI Engineer</title>
+
+    <!-- ── Google Fonts ── -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ── Icon Font ── -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- ── AOS Scroll Animations ── -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- ── Our Stylesheets (order matters) ── -->
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./nav-hero.css" />
+    <link rel="stylesheet" href="./experience-metrics.css" />
+    <link rel="stylesheet" href="./projects.css" />
+    <link rel="stylesheet" href="./sections.css" />
+  </head>
+
+  <body>
+    <!-- Ambient glow orbs (purely decorative) -->
+    <div class="orb1"></div>
+    <div class="orb2"></div>
+
+    <!-- ══════════════════════════════════════
+         NAVIGATION
+    ══════════════════════════════════════ -->
+    <nav>
+      <a href="#" class="nav-logo">
+        kapil<span class="dim">.</span>raghav<span class="dim">()</span>
+      </a>
+      <div class="nav-links">
+        <a href="#experience">Experience</a>
+        <a href="#metrics">Metrics</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#dsa">DSA</a>
+        <a
+          href="https://drive.google.com/file/d/1tb6H9-PVyerFch-0ZHY2o1IArt1vLc4C/view"
+          target="_blank"
+          class="nav-resume"
+          >Resume</a
+        >
+      </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════
+         PAGE CONTENT
+    ══════════════════════════════════════ -->
+    <div class="container">
+      <!-- ── HERO ── -->
+      <section class="hero">
+        <div class="hero-tag">Open to opportunities</div>
+
+        <h1>
+          Kapil <span class="name-acc">Raghav</span>
+          <span class="sub">
+            Python Backend Developer &nbsp;·&nbsp; GenAI Systems &nbsp;·&nbsp;
+            Distributed Architecture
+          </span>
+        </h1>
+
+        <p class="hero-bio">
+          Backend engineer with <strong>3.5+ years</strong> at Cognizant building
+          <strong>high-concurrency FastAPI services</strong>,
+          <strong>RAG pipelines</strong>, and real-time distributed systems.
+          Passionate about clean architecture, semantic search, and systems that
+          actually scale under load.
+        </p>
+
+        <div class="hero-cta">
+          <a
+            href="https://drive.google.com/file/d/1tb6H9-PVyerFch-0ZHY2o1IArt1vLc4C/view"
+            target="_blank"
+            class="btn-primary"
+          >
+            <i class="fas fa-file-alt"></i> View Resume
+          </a>
+          <a
+            href="https://linkedin.com/in/kapilraghav2801"
+            target="_blank"
+            class="btn-ghost"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a
+            href="https://github.com/kapilraghav2801"
+            target="_blank"
+            class="btn-ghost"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <span class="stat-val">3+</span>
+            <span class="stat-label">Years at Cognizant</span>
+          </div>
+          <div>
+            <span class="stat-val">90%</span>
+            <span class="stat-label">Search Time Saved</span>
+          </div>
+          <div>
+            <span class="stat-val">$2K</span>
+            <span class="stat-label">LLM Cost Cut / Month</span>
+          </div>
+          <div>
+            <span class="stat-val">99.5%</span>
+            <span class="stat-label">API Uptime</span>
+          </div>
+        </div>
+
+        <div class="scroll-hint">scroll</div>
+      </section>
+
+      <!-- ── EXPERIENCE ── -->
+      <section id="experience">
+        <div class="section-head" data-aos="fade-up">
+          <span class="eyebrow">Career Timeline</span>
+          <h2>Professional <span>Experience</span></h2>
+          <p>
+            Three roles. One company. Steady growth from intern to backend
+            owner.
+          </p>
+        </div>
+
+        <div class="terminal-grid">
+          <!-- Current role -->
+          <div class="terminal" data-aos="fade-up">
+            <div class="terminal-bar">
+              <div class="dot r"></div>
+              <div class="dot y"></div>
+              <div class="dot g"></div>
+              <span class="tab-label">current-role.sh</span>
+            </div>
+            <div class="terminal-body">
+              <span class="prompt">$ kapil --status</span><br /><br />
+              <span id="typed-current"></span>
+            </div>
+          </div>
+
+          <!-- Oracle role -->
+          <div class="terminal" data-aos="fade-up" data-aos-delay="100">
+            <div class="terminal-bar">
+              <div class="dot r"></div>
+              <div class="dot y"></div>
+              <div class="dot g"></div>
+              <span class="tab-label">oracle-dev.py</span>
+            </div>
+            <div class="terminal-body">
+              <span class="prompt">$ kapil --history</span><br /><br />
+              <span id="typed-prev"></span>
+            </div>
+          </div>
+
+          <!-- Intern -->
+          <div class="terminal" data-aos="fade-up" data-aos-delay="200">
+            <div class="terminal-bar">
+              <div class="dot r"></div>
+              <div class="dot y"></div>
+              <div class="dot g"></div>
+              <span class="tab-label">internship.bin</span>
+            </div>
+            <div class="terminal-body">
+              <span class="prompt">$ kapil --origin</span><br /><br />
+              <span id="typed-origin"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── METRICS ── -->
+      <section id="metrics">
+        <div class="section-head" data-aos="fade-up">
+          <span class="eyebrow">By The Numbers</span>
+          <h2>Impact <span>Metrics</span></h2>
+          <p>Actual numbers from actual production systems.</p>
+        </div>
+
+        <div class="metrics-grid">
+          <div class="metric-card" data-aos="zoom-in">
+            <span class="metric-val">90%</span>
+            <span class="metric-label">Search Time Reduced</span>
+            <p class="metric-desc">
+              AskSOP GenAI assistant cut manual document lookup time for 500+
+              internal users across departments.
+            </p>
+          </div>
+          <div class="metric-card" data-aos="zoom-in" data-aos-delay="80">
+            <span class="metric-val">99.5%</span>
+            <span class="metric-label">API Uptime</span>
+            <p class="metric-desc">
+              RESTful FastAPI backend for document ingestion and retrieval
+              workflows maintained rock-solid availability.
+            </p>
+          </div>
+          <div class="metric-card" data-aos="zoom-in" data-aos-delay="160">
+            <span class="metric-val">20%</span>
+            <span class="metric-label">Fewer LLM Calls</span>
+            <p class="metric-desc">
+              Semantic Redis caching cut redundant LLM inference — saving
+              ~$2,000/month in inference costs.
+            </p>
+          </div>
+          <div class="metric-card" data-aos="zoom-in" data-aos-delay="240">
+            <span class="metric-val">99%</span>
+            <span class="metric-label">Response Accuracy</span>
+            <p class="metric-desc">
+              Pydantic validation + response guardrails achieved 99% accuracy
+              and eliminated hallucinations completely.
+            </p>
+          </div>
+          <div class="metric-card" data-aos="zoom-in" data-aos-delay="320">
+            <span class="metric-val">1000+</span>
+            <span class="metric-label">Req/sec Throughput</span>
+            <p class="metric-desc">
+              Distributed URL Shortener handles 1000+ req/sec with sub-50ms
+              latency, 10K concurrent users in load tests.
+            </p>
+          </div>
+          <div class="metric-card" data-aos="zoom-in" data-aos-delay="400">
+            <span class="metric-val">80%</span>
+            <span class="metric-label">DB Queries Reduced</span>
+            <p class="metric-desc">
+              Multi-tier Redis + PostgreSQL smart cache invalidation slashed
+              unnecessary database hits by 80%.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── PROJECTS ── -->
+      <section id="projects">
+        <div class="section-head" data-aos="fade-up">
+          <span class="eyebrow">What I Build</span>
+          <h2>Featured <span>Projects</span></h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- StreamSync — Featured -->
+          <div class="ss-banner" data-aos="fade-up">
+            <div class="ss-top">
+              <div class="ss-icon">⚡</div>
+              <div class="ss-title">
+                <div class="badge" style="margin-bottom: 10px">
+                  <span class="dlive"></span> Featured · In Progress
+                </div>
+                <h3>Stream<span>Sync</span></h3>
+                <p class="sub">
+                  YouTube-Scale Video Processing Pipeline &nbsp;·&nbsp; FastAPI
+                  · Celery · Redis · PostgreSQL · Docker
+                </p>
+              </div>
+            </div>
+
+            <p class="ss-desc">
+              A production-grade
+              <strong>async video processing pipeline</strong>
+              engineered for YouTube-scale workloads. Videos are uploaded via a
+              non-blocking FastAPI endpoint, dispatched to
+              <strong>Celery workers</strong> via Redis broker, transcoded in
+              parallel at multiple resolutions, thumbnail-generated, and tracked
+              in real time — without ever blocking the API layer.
+            </p>
+
+            <div class="ss-features">
+              <div class="ss-feat">
+                <div class="fi">🎬</div>
+                <h5>Async Upload Queue</h5>
+                <p>
+                  Non-blocking video intake via FastAPI + instant Celery task
+                  dispatch with Redis as the message broker.
+                </p>
+              </div>
+              <div class="ss-feat">
+                <div class="fi">⚙️</div>
+                <h5>Parallel Transcoding</h5>
+                <p>
+                  Multi-resolution processing (360p → 4K) across distributed
+                  worker pools with retry logic and failure isolation.
+                </p>
+              </div>
+              <div class="ss-feat">
+                <div class="fi">📊</div>
+                <h5>Real-Time Status Tracking</h5>
+                <p>
+                  Live pipeline states — queued, processing, transcoded, failed
+                  — stored in PostgreSQL, queryable via REST.
+                </p>
+              </div>
+              <div class="ss-feat">
+                <div class="fi">🐳</div>
+                <h5>Containerized Stack</h5>
+                <p>
+                  Full Docker Compose orchestration with health checks, graceful
+                  shutdown, and production-ready service config.
+                </p>
+              </div>
+            </div>
+
+            <div class="tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">Celery</span>
+              <span class="tag">Redis</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+              <span class="tag">FFmpeg</span>
+              <span class="tag">System Design</span>
+              <span class="tag">Async</span>
+            </div>
+
+            <a
+              href="https://kapilraghav.info/streamsync"
+              target="_blank"
+              class="proj-link"
+            >
+              Explore StreamSync <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- AskSOP RAG -->
+          <div class="project-card feat" data-aos="fade-up">
+            <div class="badge">
+              <span class="dlive"></span> Production · Cognizant
+            </div>
+            <h3>🧠 AskSOP — Enterprise RAG Assistant</h3>
+            <p class="desc">
+              End-to-end GenAI document assistant for 500+ internal pharma
+              users. Semantic search over 100k+ SOPs with compliance guardrails,
+              multi-tenant Azure AD auth, and semantic Redis caching.
+            </p>
+            <ul class="points">
+              <li>
+                FastAPI + AWS Bedrock (Claude 3 Haiku) two-stage retrieval
+                pipeline
+              </li>
+              <li>
+                Multi-threaded Python ETL: delta-sync SharePoint → AWS
+                OpenSearch
+              </li>
+              <li>
+                JWT + RBAC + Azure AD across 10+ client sites (multi-tenant)
+              </li>
+              <li>
+                Pydantic validation schemas — 99% accuracy, zero hallucinations
+              </li>
+              <li>
+                Redis semantic caching — 20% fewer LLM calls, $2K saved monthly
+              </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">AWS Bedrock</span>
+              <span class="tag">OpenSearch</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Azure AD</span>
+              <span class="tag">DynamoDB</span>
+            </div>
+          </div>
+
+          <!-- Distributed URL Shortener -->
+          <div class="project-card" data-aos="fade-up">
+            <div class="badge purple">
+              <span class="dlive"></span> Open Source
+            </div>
+            <h3>🔗 Distributed URL Shortener Service</h3>
+            <p class="desc">
+              High-performance URL shortening service built for scale — 1000+
+              req/sec, sub-50ms response, 99.9% uptime under 10K concurrent
+              users in load tests.
+            </p>
+            <ul class="points">
+              <li>
+                Base62 encoding with multi-tier Redis + PostgreSQL smart cache
+                invalidation
+              </li>
+              <li>
+                Token bucket rate-limiting middleware to prevent API abuse
+              </li>
+              <li>
+                Docker Compose stack with health checks and graceful shutdown
+              </li>
+              <li>
+                80% reduction in unnecessary DB queries via caching strategy
+              </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">Redis</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+            </div>
+            <a
+              href="https://github.com/kapilraghav2801"
+              target="_blank"
+              class="proj-link"
+            >
+              GitHub <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── TECH STACK ── -->
+      <section id="stack">
+        <div class="section-head" data-aos="fade-up">
+          <span class="eyebrow">Toolbox</span>
+          <h2>Tech <span>Stack</span></h2>
+        </div>
+
+        <div class="stack-grid">
+          <div class="stack-cat" data-aos="fade-up">
+            <h4>Languages</h4>
+            <div class="tag-list">
+              <span class="pill">Python</span>
+              <span class="pill">SQL / PostgreSQL</span>
+              <span class="pill">PL/SQL</span>
+            </div>
+          </div>
+          <div class="stack-cat" data-aos="fade-up" data-aos-delay="60">
+            <h4>Backend</h4>
+            <div class="tag-list">
+              <span class="pill">FastAPI</span>
+              <span class="pill">Flask</span>
+              <span class="pill">Pydantic</span>
+              <span class="pill">Async Programming</span>
+              <span class="pill">REST APIs</span>
+            </div>
+          </div>
+          <div class="stack-cat" data-aos="fade-up" data-aos-delay="120">
+            <h4>GenAI & ML</h4>
+            <div class="tag-list">
+              <span class="pill">RAG Pipelines</span>
+              <span class="pill">LangChain</span>
+              <span class="pill">Prompt Engineering</span>
+              <span class="pill">Embeddings</span>
+              <span class="pill">Vector Search</span>
+              <span class="pill">OpenSearch</span>
+            </div>
+          </div>
+          <div class="stack-cat" data-aos="fade-up" data-aos-delay="180">
+            <h4>Databases & Caching</h4>
+            <div class="tag-list">
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">Redis</span>
+              <span class="pill">Oracle DB</span>
+              <span class="pill">DynamoDB</span>
+            </div>
+          </div>
+          <div class="stack-cat" data-aos="fade-up" data-aos-delay="240">
+            <h4>Cloud & DevOps</h4>
+            <div class="tag-list">
+              <span class="pill">AWS Bedrock</span>
+              <span class="pill">AWS S3</span>
+              <span class="pill">Docker</span>
+              <span class="pill">GitHub Actions</span>
+              <span class="pill">Linux</span>
+            </div>
+          </div>
+          <div class="stack-cat" data-aos="fade-up" data-aos-delay="300">
+            <h4>Core Competencies</h4>
+            <div class="tag-list">
+              <span class="pill">System Design</span>
+              <span class="pill">Data Structures & Algorithms</span>
+              <span class="pill">Caching Strategy</span>
+              <span class="pill">Query Optimization</span>
+              <span class="pill">Concurrency</span>
+              <span class="pill">Structured Logging</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── DSA / LEETCODE ── -->
+      <section id="dsa">
+        <div class="section-head" data-aos="fade-up">
+          <span class="eyebrow">Always Sharpening</span>
+          <h2>DSA & <span>LeetCode</span></h2>
+        </div>
+
+        <div class="dsa-wrap" data-aos="fade-up">
+          <div class="dsa-left">
+            <h3>Algorithms are<br /><span>My Hobby</span></h3>
+            <p>
+              Actively grinding LeetCode with a focus on patterns that appear in
+              <strong>Google, Meta, and top-tier</strong> backend interviews.
+              Not just solving problems — understanding the <em>why</em> behind
+              every approach so it maps back to real backend decisions: faster
+              APIs, smarter caches, leaner queries.
+            </p>
+            <div class="topic-tags">
+              <span class="ttag">Arrays / Sliding Window</span>
+              <span class="ttag">Trees & Graphs</span>
+              <span class="ttag">Dynamic Programming</span>
+              <span class="ttag">Heaps / Priority Queue</span>
+              <span class="ttag">Binary Search</span>
+              <span class="ttag">Two Pointers</span>
+              <span class="ttag">Backtracking</span>
+              <span class="ttag">Concurrency Patterns</span>
+            </div>
+          </div>
+
+          <div class="dsa-right">
+            <p
+              style="
+                color: var(--text-dim);
+                font-size: 0.8rem;
+                margin-bottom: 4px;
+              "
+            >
+              Practice Distribution
+            </p>
+            <div class="bar-row">
+              <div class="bar-label">
+                <span>Easy — Pattern warmup</span>
+                <span>✅ Solid</span>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fill easy"></div>
+              </div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">
+                <span>Medium — Primary grind (Google patterns)</span>
+                <span>🔥 Active</span>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fill med"></div>
+              </div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label">
+                <span>Hard — Graph / DP deep dives</span>
+                <span>💪 Building</span>
+              </div>
+              <div class="bar-bg">
+                <div class="bar-fill hard"></div>
+              </div>
+            </div>
+            <div class="dsa-quote">
+              <strong>Core belief:</strong> Backend engineers who understand
+              data structures write faster APIs, smarter caches, and more
+              elegant queries. DSA isn't just interview prep — it's the
+              intuition behind good engineering.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── THE CONVINCER ── -->
+      <section id="fun">
+        <div class="section-head" data-aos="fade-up">
+          <span class="eyebrow">Beyond The Code</span>
+          <h2>The <span>Convincer</span></h2>
+        </div>
+
+        <div class="convincer" data-aos="fade-up">
+          <div class="conv-head">
+            <div class="conv-icon">🎧</div>
+            <div>
+              <h3>
+                I Don't Just Build Systems.
+                <span>I Sell Them.</span>
+                <span class="conv-badge">True Story</span>
+              </h3>
+            </div>
+          </div>
+
+          <p class="conv-story">
+            College days. Tight budget. I had just discovered
+            <strong>boAt earphones</strong> — incredible bass, 1-year warranty
+            with <strong>home pickup for claims</strong>. Genuinely in love with
+            the product. So naturally, I did what any backend engineer would do:
+            I ran a <em>conversion campaign</em>. I'd invite friends and family
+            to "just listen to this one song" — picked specifically for the
+            heavy bass drop. The conversion rate? Suspiciously high. Same
+            colour. Multiple invoices. I also made sure everyone knew Amazon
+            Prime would deliver by tomorrow, so
+            <em>keep your invoice handy</em>.
+            <strong>One year later,</strong> when my earphones showed issues, I
+            claimed a fresh warranty year using a friend's purchase invoice.
+            <strong>
+              Fallback planned. Edge case handled. Invoice-as-backup-strategy
+              deployed.
+            </strong>
+          </p>
+
+          <div class="conv-punchline">
+            I don't just build robust systems — I
+            <strong>advocate for them</strong>, help people understand why
+            they're worth investing in, and always think about the failure modes
+            <em>before</em> they hit production. Whether it's a distributed
+            cache, a warranty claim, or convincing a team to adopt async
+            architecture —
+            <strong>same energy. Same precision.</strong>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /container -->
+
+    <!-- ══════════════════════════════════════
+         FOOTER
+    ══════════════════════════════════════ -->
+    <footer>
+      <a href="#" class="footer-logo">kapil.raghav()</a>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/kapilraghav2801" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/kapilraghav2801" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="mailto:kapilraghav1221@gmail.com">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1tb6H9-PVyerFch-0ZHY2o1IArt1vLc4C/view"
+          target="_blank"
+        >
+          <i class="fas fa-file-alt"></i> Resume
+        </a>
+      </div>
+      <p class="footer-copy">
+        © 2026 Kapil Raghav · Backend & GenAI Engineer · Noida, India
+      </p>
+    </footer>
+
+    <!-- ── Third-party JS (load before our scripts) ── -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- ── Our Scripts ── -->
+    <script src="./terminal.js"></script>
+    <script src="./animations.js"></script>
+  </body>
+</html>

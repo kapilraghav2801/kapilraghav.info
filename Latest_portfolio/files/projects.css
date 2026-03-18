@@ -1,0 +1,203 @@
+/* ============================================
+   PROJECTS.CSS — StreamSync banner + project cards
+   ============================================ */
+
+.projects-grid {
+  display: grid;
+  gap: 22px;
+}
+
+/* ── STREAMSYNC FEATURED BANNER ── */
+.ss-banner {
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.05), rgba(168, 85, 247, 0.04));
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 20px;
+  padding: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Large watermark text behind content */
+.ss-banner::before {
+  content: 'STREAMSYNC';
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  font-family: 'Syne', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: rgba(0, 229, 255, 0.04);
+  pointer-events: none;
+  letter-spacing: -0.02em;
+}
+
+.ss-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.ss-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.15), rgba(168, 85, 247, 0.12));
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.ss-title h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 5px;
+}
+
+.ss-title h3 span {
+  color: var(--accent);
+}
+
+.ss-title .sub {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.ss-desc {
+  color: var(--text-dim);
+  line-height: 1.75;
+  max-width: 700px;
+  margin-bottom: 26px;
+}
+
+.ss-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.ss-feat {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid var(--border);
+}
+
+.ss-feat .fi {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.ss-feat h5 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--text);
+}
+
+.ss-feat p {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+/* ── PROJECT CARDS ── */
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 38px;
+  transition: transform 0.3s, border-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated left accent bar */
+.project-card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--accent);
+  transform: scaleY(0);
+  transition: transform 0.35s;
+  transform-origin: bottom;
+}
+
+.project-card:hover {
+  transform: translateX(5px);
+  border-color: rgba(0, 229, 255, 0.15);
+}
+
+.project-card:hover::after {
+  transform: scaleY(1);
+}
+
+/* Featured variant — bar always visible */
+.project-card.feat {
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.04), var(--surface));
+  border-color: rgba(0, 229, 255, 0.15);
+}
+
+.project-card.feat::after {
+  transform: scaleY(1);
+}
+
+.project-card h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.project-card p.desc {
+  color: var(--text-dim);
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.points {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.points li {
+  color: var(--text-dim);
+  font-size: 0.88rem;
+  padding: 5px 0 5px 18px;
+  position: relative;
+}
+
+.points li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-family: 'Space Mono', monospace;
+}
+
+/* Arrow link */
+.proj-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: gap 0.2s;
+}
+
+.proj-link:hover {
+  gap: 14px;
+}
