@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "destination": "/streamsync/",
+      "permanent": false
+    },
+    {
       "source": "/streamsync",
       "destination": "/streamsync/",
       "permanent": false
