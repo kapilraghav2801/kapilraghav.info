@@ -1,24 +1,8 @@
 {
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/streamsync/",
-      "permanent": false
-    },
-    {
-      "source": "/streamsync",
-      "destination": "/streamsync/",
-      "permanent": false
-    }
-  ],
   "rewrites": [
     {
-      "source": "/streamsync/",
-      "destination": "/Latest_portfolio/files/index.html"
-    },
-    {
       "source": "/streamsync/:path*",
-      "destination": "/Latest_portfolio/files/:path*"
+      "destination": "https://streamsync-blue.vercel.app/:path*"
     }
   ]
 }
