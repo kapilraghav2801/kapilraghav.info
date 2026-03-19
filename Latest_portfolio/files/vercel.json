@@ -4,9 +4,6 @@
       "source": "/streamsync/:path*",
       "destination": "https://streamsync-blue.vercel.app/:path*"
     },
-    {
-      "source": "/frontend/:path*",
-      "destination": "https://streamsync-blue.vercel.app/frontend/:path*"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
