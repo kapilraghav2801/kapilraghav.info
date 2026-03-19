@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/streamsync/:path*",
-      "destination": "https://streamsync-blue.vercel.app/:path*"
-    }
-  ]
-}
