@@ -5,9 +5,20 @@
       "destination": "https://streamsync-blue.vercel.app/:path*"
     },
     {
-      "source": "/leetcode(.*)",
+      "source": "/leetcode/assets/:path*",
+      "destination": "https://leetcode-dashboard-five.vercel.app/leetcode/assets/:path*"
+    },
+    {
+      "source": "/leetcode/:path*",
+      "destination": "https://leetcode-dashboard-five.vercel.app/leetcode/:path*"
+    },
+    {
+      "source": "/leetcode",
       "destination": "https://leetcode-dashboard-five.vercel.app/leetcode"
     },
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
