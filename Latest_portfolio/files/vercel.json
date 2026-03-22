@@ -4,6 +4,10 @@
       "source": "/streamsync/:path*",
       "destination": "https://streamsync-blue.vercel.app/:path*"
     },
+    {
+      "source": "/leetcode/:path*",
+      "destination": "https://leetcode-dashboard-five.vercel.app/leetcode/:path*"
+    },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
