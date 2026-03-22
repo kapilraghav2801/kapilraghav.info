@@ -5,8 +5,8 @@
       "destination": "https://streamsync-blue.vercel.app/:path*"
     },
     {
-      "source": "/leetcode/:path*",
-      "destination": "https://leetcode-dashboard-five.vercel.app/leetcode/:path*"
+      "source": "/leetcode(.*)",
+      "destination": "https://leetcode-dashboard-five.vercel.app/leetcode$1"
     },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
