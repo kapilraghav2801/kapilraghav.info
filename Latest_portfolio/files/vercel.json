@@ -6,7 +6,7 @@
     },
     {
       "source": "/leetcode(.*)",
-      "destination": "https://leetcode-dashboard-five.vercel.app/leetcode$1"
+      "destination": "https://leetcode-dashboard-five.vercel.app/leetcode"
     },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
