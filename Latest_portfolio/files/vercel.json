@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/votelive",
+      "destination": "https://votelive-blond.vercel.app/"
+    },
+    {
+      "source": "/votelive/:path*",
+      "destination": "https://votelive-blond.vercel.app/:path*"
+    },
+    {
       "source": "/streamsync/:path*",
       "destination": "https://streamsync-blue.vercel.app/:path*"
     },
