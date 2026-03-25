@@ -2,15 +2,15 @@
   "rewrites": [
     {
       "source": "/votelive/assets/:path*",
-      "destination": "https://votelive-blond.vercel.app/votelive/assets/:path*"
+      "destination": "https://votelive-blond.vercel.app/assets/:path*"
     },
     {
       "source": "/votelive/:path*",
-      "destination": "https://votelive-blond.vercel.app/votelive/:path*"
+      "destination": "https://votelive-blond.vercel.app/:path*"
     },
     {
       "source": "/votelive",
-      "destination": "https://votelive-blond.vercel.app/votelive"
+      "destination": "https://votelive-blond.vercel.app/"
     },
     {
       "source": "/streamsync/:path*",
@@ -18,15 +18,15 @@
     },
     {
       "source": "/leetcode/assets/:path*",
-      "destination": "https://leetcode-dashboard-five.vercel.app/leetcode/assets/:path*"
+      "destination": "https://leetcode-dashboard-five.vercel.app/assets/:path*"
     },
     {
       "source": "/leetcode/:path*",
-      "destination": "https://leetcode-dashboard-five.vercel.app/leetcode/:path*"
+      "destination": "https://leetcode-dashboard-five.vercel.app/:path*"
     },
     {
       "source": "/leetcode",
-      "destination": "https://leetcode-dashboard-five.vercel.app/leetcode"
+      "destination": "https://leetcode-dashboard-five.vercel.app/"
     },
     {
       "source": "/(.*)",
