@@ -1,17 +1,17 @@
 {
-  "redirects": [
+  "rewrites": [
     {
-      "source": "/votelive",
-      "destination": "https://votelive-blond.vercel.app/",
-      "permanent": false
+      "source": "/votelive/assets/:path*",
+      "destination": "https://votelive-blond.vercel.app/votelive/assets/:path*"
     },
     {
       "source": "/votelive/:path*",
-      "destination": "https://votelive-blond.vercel.app/:path*",
-      "permanent": false
-    }
-  ],
-  "rewrites": [
+      "destination": "https://votelive-blond.vercel.app/votelive/:path*"
+    },
+    {
+      "source": "/votelive",
+      "destination": "https://votelive-blond.vercel.app/votelive"
+    },
     {
       "source": "/streamsync/:path*",
       "destination": "https://streamsync-blue.vercel.app/:path*"
