@@ -1,13 +1,17 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/votelive",
-      "destination": "https://votelive-blond.vercel.app/"
+      "destination": "https://votelive-blond.vercel.app/",
+      "permanent": false
     },
     {
       "source": "/votelive/:path*",
-      "destination": "https://votelive-blond.vercel.app/:path*"
-    },
+      "destination": "https://votelive-blond.vercel.app/:path*",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
     {
       "source": "/streamsync/:path*",
       "destination": "https://streamsync-blue.vercel.app/:path*"
