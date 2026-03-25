@@ -18,15 +18,15 @@
     },
     {
       "source": "/leetcode/assets/:path*",
-      "destination": "https://leetcode-dashboard-five.vercel.app/assets/:path*"
+      "destination": "https://leetcode-dashboard-five.vercel.app/leetcode/assets/:path*"
     },
     {
       "source": "/leetcode/:path*",
-      "destination": "https://leetcode-dashboard-five.vercel.app/:path*"
+      "destination": "https://leetcode-dashboard-five.vercel.app/leetcode/:path*"
     },
     {
       "source": "/leetcode",
-      "destination": "https://leetcode-dashboard-five.vercel.app/"
+      "destination": "https://leetcode-dashboard-five.vercel.app/leetcode"
     },
     {
       "source": "/(.*)",
